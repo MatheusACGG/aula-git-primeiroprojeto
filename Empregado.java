@@ -11,7 +11,7 @@ public class Empregado{
         if (tipo == 1){
             return salario;
         } else if (tipo == 2) {
-            return salario + salario *comissao;
+            return gitsalario + salario *comissao;
         } else if (tipo == 3){
             return salario + bonus;
         } else {
