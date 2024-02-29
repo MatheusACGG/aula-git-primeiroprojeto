@@ -11,7 +11,7 @@ public class Empregado{
         if (tipo == 1){
             return salario;
         } else if (tipo == 2) {
-            return (salario + salario)*comissao;
+            return salario + salario *comissao;
         } else if (tipo == 3){
             return salario + bonus;
         } else {
@@ -43,6 +43,30 @@ public class Empregado{
 
     public void setTipo(int tipo){
         this.tipo = tipo;
+    }
+
+    public double getSalario(){
+        return this.salario;
+    }
+
+    public void setSalario(double salario){
+        this.salario = salario;
+    }
+
+    public double getComissao(){
+        return this.comissao;
+    }
+
+    public void setComissao(double comissao){
+        this.comissao = comissao;
+    }
+
+    public double getBonus(){
+        return this.bonus;
+    }
+
+    public void setBonus(double bonus){
+        this.bonus = bonus;
     }
 
 }
